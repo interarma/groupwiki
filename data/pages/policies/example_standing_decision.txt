@@ -1,0 +1,22 @@
+====== Example Standing Decision ======
+This is an example 'Standing decision' page.
+
+
+==== References ====
+The positions described in this document are based on discussions held in the following meeting(s):
+
+  * [[meetings:start|Replace this with a link to an appropriate minutes of meeting]]
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry example_standing_decision ----
+author           : root
+date_dt          : 2013-05-14
+scope            : other
+namespace_nspage : policies
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+~~NOTOC~~

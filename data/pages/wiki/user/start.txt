@@ -1,0 +1,13 @@
+====== Wiki User Home Page ======
+This page lists all of the users that have created a page in ''user'' namespace.  To view a page just click on its title.  To create a new page, enter your details in the boxes below, and click on the 'Create User Page' button.  If a user page remains //after// it's been deleted, go [[:wiki:user:start?do=admin&page=data_clean|here]] and click on 'Clean database!'.
+
+
+===== Current user pages =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : username, %title%, emailaddress_, phonenumber, location
+headers : Username, Preferred Name, Email Address, Phone Number, Location
+filter  : namespace_nspage=wiki:user
+sort    : %title%
+----
+~~MULTI_PLUGIN_CLOSE~~

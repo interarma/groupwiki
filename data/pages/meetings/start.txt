@@ -1,0 +1,24 @@
+====== Minutes of Meetings ======
+This page lists all of the meeting notes that have been saved in the ''meetings'' namespace.  To view or edit a record, just click on its title.  To create a new one, enter its name in the box below, then click on the 'Add page' button.  If a record remains //after// it's been deleted, go [[this>doku.php?id=meetings:start&do=admin&page=data_clean|here]] and click on 'Clean database!'.
+
+<form>
+action   template _ meetings:%Y%m%d _
+
+fieldset "Create a new 'Record of Meeting' page"
+
+select   "Type of meeting" "regular|working group|emergency" "=regular" @
+hidden   "Suffix" "=meeting" @
+textbox  "Key agenda items" "=To be finalised after the meeting" @
+submit   "Create Minutes"
+</form>
+
+\\
+
+~~MULTI_PLUGIN_OPEN~~
+---- datatable ----
+cols    : date_dt, %title%, type, foci
+headers : Date, Title, Type, Key agenda items
+sort    : ^date_dt
+filter  : namespace_nspage=meetings
+----
+~~MULTI_PLUGIN_CLOSE~~

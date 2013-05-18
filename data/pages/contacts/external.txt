@@ -1,0 +1,43 @@
+====== External Contacts ======
+To add someone to one of these lists, go to the bottom of the table and click on the '+' button. To update a record, just click on the pencil at the right-hand side of the row; to sort by a particular column, just click on the grey shape to the right of its heading; to search for records meeting specific criteria, just use the filter constructor below (''%'' is the wildcard character).
+
+
+===== Related Groups =====
+~~MULTI_PLUGIN_OPEN~~
+<database relatedgroups_list width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  organisation, text, Group, 80 required visible
+  name, text, Contact, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  website, url, Website, visible
+  email, email, Email, required visible
+  comments, text, Comments, visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Sympathetic Journalists and Media =====
+~~MULTI_PLUGIN_OPEN~~
+<database media_list width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  name, text, Name, 60 required visible
+  organisation, text, Organisation, 80 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, required visible
+  contact_person, text, Contact Person, 60 visible
+  comments, text, Comments, visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Government Bodies and Organisations =====
+~~MULTI_PLUGIN_OPEN~~
+<database government_list width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  organisation, text, Organisation, 80 required visible
+  name, text, Contact, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, required visible
+  comments, text, Comments, visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~

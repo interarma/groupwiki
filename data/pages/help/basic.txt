@@ -1,0 +1,71 @@
+====== Basic Wiki Concepts ======
+There are plenty of reasons for having a wiki, and if you're not already familiar with them, then you might want to start with sources such as [[http://en.wikipedia.org/wiki/Wiki#Characteristics|Wikipedia's page on Wikis]], or even [[http://www.commoncraft.com/video/wikis|this video]] (if you can overlook the occasional cringe-worthy moment).
+
+For activist groups, we believe they have the following key strengths:
+
+    - **They allow people to collaboratively create, access and edit definitive and up-to-date information, and to capture and share knowledge in a central location**.  This is in contrast to:
+      - email lists, which often consist of streams of short messages and/or snapshots of information that you need to sift through; the latter, in particular, can become dated rather quickly --- something which can also make it harder to find //current// information;
+      - services like Google groups, which are great for maintaining mailing lists and carrying out discussions between physical meetings, but which can suffer from similar problems to email lists; or
+      - more traditional blogging engines such as [[http://wordpress.org/|Wordpress]] or [[http://drupal.org|Drupal]], which are great for few-to-many forms of communication, but are less well suited to collaborations, and which tend to lack versioning capabilities.
+    - **They allow for finer-grained control of who gets access to what information**.  This can, of course, be done using other systems, but most wikis support some combination of user-group and namespace-based permissions.
+    - **They can support embedded databases**, which is nice if you want to maintain and search through larger lists and sign-up sheets.
+    - **They're relatively easy to use**.  This installation includes the WYSIWYG editor, fckgLite, which makes it easier to edit richly-formatted pages, and the Wiki engine itself, [[http://dokuwiki.org/|DokuWiki]], is one of the easiest to install and backup — as it's all file-based, you don't need to worry about external databases.
+
+(Unfortunately, DokuWiki doesn't support one of the most powerful features of the wiki --- the ability to list pages that have been linked to but not yet created, and thus identify topics that need to be covered to make the site more thorough or complete --- but it is still a very powerful and flexible wiki engine.  Short of adopting a [[http://en.wikipedia.org/wiki/Semantic_wiki|Semantic Wiki]] engine such as [[http://www.smwplus.com/|SMW+]], it represents a pretty good trade-off between functionality and complexity.)
+
+
+===== Collaboration and Knowledge Sharing =====
+Within an activist group, projects are often organised by multiple people.  Examples include:
+
+    * **planning an event**, where several people may be working on different aspects of an event but still want visibility over the whole planning process, or where people may be working on the event as a whole and need some way to ensure that they're not repeating (or worse, undoing) something that someone else has already done;
+    * **maintaining sign-up sheets**, where the task of adding people (and looking up their details, say, so they can be called prior to a big event) should be shared by multiple people;
+    * **letter writing projects**, where one person may write the first draft, and others may make revisions until consensus is reached on the final draft;
+    * **information gathering or monitoring projects**, where the task of entering links or maintaining current statistics might be too onerous for one person but easily shared out or rostered across a group of people.
+
+Wikis can also help to capture and share knowledge and data by enabling people to, for example:
+
+    * **write how-tos** --- e.g. on how to run a film fundraiser or organise a rally --- where people who have been involved in the planning process before can contribute directly to the relevant sections of the how-to, and where others can come along afterwards and add to, or update it to reflect more recent experiences;
+    * **capture and track contact details**  --- e.g. of sympathetic journalists and people in relevant government, and non-government, organisations --- something which can not only faciliate a sharing of responsibilities, but which can also provide some level of continuity should a liaison leave the group; or even
+    * **store frequently used files in a shared location**  which, in turn, allows people to download the latest (or for that matter, previous) versions of flyer or poster designs, fact sheets or other 'stall' materials.
+
+
+===== Revision Control / History =====
+An important feature of any wiki (including this one) is that of version control.  Even when you're working on a document by yourself, there are times when you'll want to undo some recent edits or revert to a previously saved version.  When you've got several people writing or editing a document, 
+chances are you'll want to do this more often --- especially if the document contains frequently updated lists or tables.
+
+Version control also allows you to view snapshots of 'working' or 'living' documents at previous points in time.  If an article describes a particular situation, location, policy or set of statistics, then you can access historical versions of that document by browsing previous revisions, or directly via permanent links.  (Whilst this use of version control might seem like something of a contrivance, the permalink concept is so central to the //correct// citation of wikis that many systems also include some kind of 'Cite this page' functionality.)
+
+
+===== Namespaces =====
+Without getting into the details of it here (we'll save that for the [[help:articles|next]] page), namespaces and articles are to a wiki what directories and files are to a disk.  In a nutshell, namespaces can:
+
+  * be used to organise articles, images and other files into meaningful groups;
+  * be used lock-down sets of articles and files to specific users or user groups (see below); and
+  * have their own templates, or default structures (in this wiki, we've defined templates for the [[meetings:start|:meetings]], [[projects:start|:projects]], [[documents:start|:documents]] and [[wiki:user:start|:wiki:user]] namespaces).
+
+
+===== Security =====
+The other feature that most wikis support is article- and namespace-based security controls.  While many of the best known wikis have adopted an 'open' security model --- i.e. one in which anyone can create or edit an article --- there //are// situations where you want to restrict access to the site as a whole and/or specific pages (and namespaces) to registered users.
+
+Where supported, security is usually implemented through 'Access Control Lists' (ACLs), which allow administrators to specify, in detail, who can read, edit, create or delete articles and namespaces; ACLs also allow them to specify who can upload new images and files to the wiki.
+
+
+~~MULTI_PLUGIN_OPEN~~  
+\\
+
+**Next Page: [[help:navigation|Finding your way around this Wiki]]**
+
+\\
+
+---- dataentry example ----
+description   : An introduction to the basic concepts and strengths of the wiki
+author   : root
+section   : 1
+created_dt   : 2012-04-29
+lastupdated_dt   : 2012-04-29
+type   : documentation
+tags   : user
+status_   : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,11 @@
+====== Public Home ======
+Anything you place here, or on child pages, will be readable by anyone who can access this server.  (Note that it can only be edited by registered users.)
+
+===== Example Contact Form =====
+If you want anonymous visitors to be able to contact you, you might want to include a contact form on this page.  If you do, though, you really should create and enable a reCapture account for //your// site to reduce the amount of spam that you receive; instructions on how to do this is given [[http://wiki.echtzeitraum.de/applications/plugins/dokuwiki/contact#requirements|here]].
+
+<code>
+~~MULTI_PLUGIN_OPEN~~
+{{contact>subj=Feedback from Site}}
+~~MULTI_PLUGIN_CLOSE~~
+</code>

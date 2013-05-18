@@ -1,0 +1,26 @@
+====== The Speech of M T Cicero in Defence of Titus Annius Milo (M Tullius Cicero) ======
+Congratulations, you've created a new page!  Note that if the document title
+contains a hyphen, there will also be a ''-'' in the label between the 
+''----dataentry----'' and '----' entries below --- you should change it to an 
+underscore (''_''), otherwise this document won't be indexed correctly.
+
+Oh, and you'll probably want to delete this and the preceding paragraphs before 
+you get started --- be sure to the leave the ''MULTI_PLUGIN'' and ''dataentry''
+lists intact, though.
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry m_tullius_cicero_the_speech_of_m_t_cicero_in_defence_of_titus_annius_milo ----
+author           : M Tullius Cicero
+title            : The Speech of M T Cicero in Defence of Titus Annius Milo
+type             : transcript
+position         : argument for
+description      : This is a speech made by Marcus Tullius Cicero on behalf of his friend Titus Annius Milo who was accused of murdering his political enemy Publius Clodius Pulcher. It is also believed to be the origin of the phrase 'Silent enim leges inter arma'
+publication_dt   : 1891-01-01
+publisher        : George Bell & Sons, York Street, Covent Garden
+location         : http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0020:text=Mil.:chapter=4&highlight=silent
+namespace_nspage : documents
+----
+~~MULTI_PLUGIN_CLOSE~~

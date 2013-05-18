@@ -1,0 +1,23 @@
+====== Advanced Concepts ======
+===== Security =====
+===== Templates =====
+===== Databases =====
+==== Article-centric Databases: Building Indices ====
+==== Free-form Databases: Storing and Searching for Data ====
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry example ----
+description      : An introduction to some more advanced concepts including security, templates and databases
+author           : root
+section          : 5
+created_dt       : 2012-04-29
+lastupdated_dt   : 2012-04-29
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

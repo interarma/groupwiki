@@ -1,0 +1,23 @@
+====== Designs and Images ======
+Through this page, you can upload, describe and link to the various design and image files your group might create and use.  Note that you can also browse through the collection via the [[this>doku.php?id=resources:media&ns=resources%3Amedia&do=media|Media Manager]].
+
+Ideally, the designs should be in PDF, PNG or TIFF format, as (a) such files will print out the same on any printer; and (b) they are open standards which are supported by lots of free software.  Where possible, you should include the 'source' files used to generate the PDF/PNG/TIFF files, as this will then allow others to modify or re-use the design in the future.  (Note that you might have to zip the source files before uploading them to the wiki.)  For consistent results, your preview images should be small (100 pixels wide).
+
+
+===== Poster and Flyer Designs =====
+^ Preview                                      ^ Description                           ^ Links                          ^
+| {{:resources:media:interarma-flyer-thumb.png?nolink&100|}}    | Example flyer: draft interarma.org announcement flyer                  | click here for the {{:resources:media:interarma-flyer.pdf|PDF version}} or the {{:resources:media:interarma-flyer.zip|original file}}, in [[http://inkscape.org/|Inkscape]] format              |
+
+
+===== Logos and Other Images =====
+^ Preview                                              ^ Description                           ^ Comments                                           ^
+| {{:resources:media:infochucker.jpg?100|thumbnail}}    | 'Info chucker' logo                   | click on thumbnail for a larger image              |
+
+
+===== Free Open Source Design Software =====
+While there are plenty of design and editing programs out there, you might want to consider the following programs as they are free and [[http://en.wikipedia.org/wiki/Open_source|open source]], and they are supported on Macintosh, Windows and Linux alike:
+
+  * **[[http://inkscape.org|Inkscape]]**, a vector-based design package similar (in some senses) to Adobe Illustrator;
+  * **[[http://gimp.org|GIMP]]**, the GNU Image Manipulation Program, which is conceptually similar to Adobe Photoshop;
+  * **[[http://scribus.net|Scribus]]**, a page layout and desktop publishing program; and
+  * **[[http://libreoffice.org/|LibreOffice]]**, a general office/productivity suite which includes word-processing, presentation and spreadsheet functionality.

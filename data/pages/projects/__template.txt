@@ -1,0 +1,24 @@
+====== @!!PAGE@ ======
+Congratulations, you've created a new page!  Note that if the project title 
+contains a hyphen, there will also be a ''-'' in the label between the 
+''----dataentry----'' and '----' entries below --- you should change it to an 
+underscore (''_''), otherwise this project won't be indexed correctly.
+
+Oh, and you'll probably want to delete this and the preceding paragraphs before 
+you get started --- be sure to the leave the ''MULTI_PLUGIN'' and ''dataentry''
+lists intact, though.
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry @FILE@ ----
+description      : ##Description##
+author           : @USER@
+created_dt       : %Y-%m-%d
+lastupdated_dt   : %Y-%m-%d
+type             : ##Type##
+status_          : ##Status##
+namespace_nspage : projects
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,202 @@
+====== Pre-installed Plugins ======
+For the full list of pre-installed plugins, go to [[this>doku.php?id=start&do=admin&page=plugin|Admin-->Manage Plugins]]; to configure the plugins, go to [[this>doku.php?id=start&do=admin&page=config#plugin_settings|Admin-->Configuration Manager-->Plugin Settings]].
+
+===== backup =====
+This plugin allows you to create and download site backups (although it requires the [[http://pear.php.net/package/PEAR|PEAR]] PHP library to be installed on your server or hosting provider).  Click [[this>doku.php?id=start&do=admin&page=backup|here]] to create a backup, and [[http://www.dokuwiki.org/plugin:backup|here]] for the plugin's home page.
+
+
+===== blog =====
+
+
+===== bureaucracy and pagemod =====
+This pair of plugins allows you to define forms, and to generate emails or modify wiki pages based upon user-provided content.  Note that for searchable lists, you should probably use the ''database2'' plugin described below, but this pair of plugins can still be used to implement contact forms or guest-book-style comment sections.
+
+For a more complete description of these plugins, see the [[http://www.dokuwiki.org/plugin:bureaucracy|bureaucracy]] and [[http://www.dokuwiki.org/plugin:pagemod|pagemod]] home pages.  By way of an example, though, here is how you might implement a simple sign-up sheet; sorting functionality is provided by the [[help:plugins#sortablejs|sortablejs]] plugin.
+
+~~MULTI_PLUGIN_OPEN~~
+<code>
+<sortable>
+^ Last contacted    ^ Name    ^ Phone number    ^ Email address    ^ Signup to -announce    ^ Signup to -other    ^ Heard about us via    ^ Comments    ^
+| 2012-03-05    | Firstname Lastname    | +61 400 000 000    | test@localhost    | Pending    | No    | Website | This is a comment    |
+<pagemod add_person output_before>| @@Last contacted@@    | @@Name@@    | @@Phone number@@    | @@Email address@@    | @@Signup to -announce@@    | @@Signup to -other@@    | @@Heard about us via@@ | @@Comments@@    |
+</pagemod>
+</sortable>
+</code>
+~~MULTI_PLUGIN_CLOSE~~
+
+This would then appear as:
+
+~~MULTI_PLUGIN_OPEN~~
+<sortable>
+^ Last contacted    ^ Name    ^ Phone number    ^ Email address    ^ Signup to -announce    ^ Signup to -other    ^ Heard about us via    ^ Comments    ^
+| 2012-03-05    | Firstname Lastname    | +61 400 000 000    | test@localhost    | Pending    | No    | Website | This is a comment    |
+<pagemod add_person output_before>| @@Last contacted@@    | @@Name@@    | @@Phone number@@    | @@Email address@@    | @@Signup to -announce@@    | @@Signup to -other@@    | @@Heard about us via@@ | @@Comments@@    |
+</pagemod>
+</sortable>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+=== Add an entry ===
+To allow wiki users to add entries via a form (i.e., without having to edit the page directly), you would use something like this:
+
+~~MULTI_PLUGIN_OPEN~~
+<code>
+<form>
+action pagemod _self add_person
+fieldset "Person's details"
+
+date     "Last contacted"
+textbox  "Name"
+textbox  "Phone number" !
+textbox  "Email address" !
+select   "Signup to -announce" "Pending|Yes|No"
+select   "Signup to -other" "Pending|Yes|No"
+select   "Heard about us via" "Protest|Speak out|Public forum|Website|Friend|Other"
+textbox  "Comments" !
+
+submit "Add Person"
+</form>
+</code>
+~~MULTI_PLUGIN_CLOSE~~
+
+which generates the following form:
+
+~~MULTI_PLUGIN_OPEN~~
+<form>
+action pagemod _self add_person
+fieldset "Person's details"
+
+date     "Last contacted"
+textbox  "Name"
+textbox  "Phone number" !
+textbox  "Email address" !
+select   "Signup to -announce" "Pending|Yes|No"
+select   "Signup to -other" "Pending|Yes|No"
+select   "Heard about us via" "Protest|Speak out|Public forum|Website|Friend|Other"
+textbox  "Comments" !
+
+submit "Add Person"
+</form>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== clearhistory =====
+
+
+===== contactmodern =====
+This plugin allows you to insert contact forms (with an optional [[http://en.wikipedia.org/wiki/ReCaptcha|reCaptcha]] field) into the wiki.  The plugin's full syntax is described on its [[http://wiki.echtzeitraum.de/applications/plugins/dokuwiki/contact|homepage]], but a typical invocation might look like this:
+<code>
+{{contact>subj=Feedback from Site}}
+</code>
+
+~~MULTI_PLUGIN_OPEN~~
+{{contact>subj=Feedback from Site}}
+~~MULTI_PLUGIN_CLOSE~~
+
+If you want anonymous visitors to be able to contact you, you might want to include a contact form on a public page --- if you do, though, you really should create and enable a reCapture account for your site to reduce the amount of spam that you receive.  Instructions on how to do this is given [[http://wiki.echtzeitraum.de/applications/plugins/dokuwiki/contact#requirements|here]], and the plugin's configuration page is [[this>doku.php?id=projects:start&do=admin&page=config#plugin____contactmodern____plugin_settings_name|here]].
+
+
+===== data =====
+
+
+===== database2 =====
+This plugin allows you to create and query SQLite-backed databases within your wiki's hierarchy (and just as importantly, subject to its access controls).  It is really too powerful to fully describe here --- you really need to consult the documentation on its [[http://wiki.nihilum.de/software:database2|homepage]], but we've included an example of a very simple sign-up database that was (basically) created by the following code:
+
+~~MULTI_PLUGIN_OPEN~~
+<code>
+<database database2_example width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  last_contacted, date, Last contacted, default="%{date.Y-m-d}" required visible
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, visible
+  signup_announce, "enum Yes / No / Pending", Signup to -announce, visible default="Pending"
+  signup_other, "enum Yes / No / Pending", Signup to -other, visible default="No"
+  registered_how, "enum Protest / Speak out / Public forum / Website / Friend / Other", Heard about us via, required visible default="Website"
+  comments, text, Comments, visible
+</database>
+</code>
+~~MULTI_PLUGIN_CLOSE~~
+
+To add someone to the list, go to the bottom of the table and click on the '+' button. To update a record, just click on the pencil at the right-hand side of the row; to sort by a particular column, just click on the grey shape to the right of its heading; to search for records meeting specific criteria, just use the filter constructor below ('%' is the wildcard character).
+
+~~MULTI_PLUGIN_OPEN~~
+<database database2_example width=100% addonclick mayadmin=@admin maydrop=@user mayinsert=@user mayfilter=@user mayedit=@user maydelete=@admin mayexport=@user mayprint=@user rowsperpage=20>
+  id, integer, ID, primary
+  last_contacted, date, Last contacted, default="%{date.Y-m-d}" required visible
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, visible
+  signup_announce, "enum Yes / No / Pending", Signup to -announce list, visible default="Pending"
+  signup_other, "enum Yes / No / Pending", Signup to -other list, visible default="No"
+  registered_how, "enum Protest / Speak out / Public forum / Website / Friend / Other", Heard about us via, required visible default="Website"
+  comments, text, Comments, visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== fckg =====
+
+
+===== include =====
+
+
+===== note =====
+This plugin allows you to create a variety of different notes --- for more information see the plugin's [[http://www.dokuwiki.org/plugin:note|homepage]]
+
+<note>**General notes** using the following code:
+<code><note>note</note></code></note>
+
+<note tip>**Tips** using the following code:
+<code><note tip>tip</note></code></note>
+
+<note important>**Important notes** by including the following code:
+<code><note important>important note</note></code></note>
+
+<note warning>**Warnings** using the following code:
+<code><note warning>warning</node></code></note>
+
+
+===== pagelist =====
+
+
+===== pagemod =====
+See [[help:plugins#bureaucracy and pagemod|bureaucracy and pagemod]] above.
+
+
+===== pagequery =====
+
+
+===== refnotes =====
+
+
+===== sortablejs =====
+
+
+===== vshare =====
+The ''vshare'' plugin allows you to embed video from sites including youtube.com and vimeo.com into your articles.  For more details, see the plugin's page at [[http://www.dokuwiki.org/plugin:vshare]].
+
+
+~~MULTI_PLUGIN_OPEN~~
+{{youtube>oOJvu2z03kM |Example of an embedded video clip}}
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== wrap =====
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry example ----
+description      : Descriptions and examples of the various pre-installed plugins
+author           : root
+section          : 6
+created_dt       : 2012-04-29
+lastupdated_dt   : 2012-04-29
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

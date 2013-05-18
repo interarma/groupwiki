@@ -1,0 +1,16 @@
+====== the Wiki Superuser ======
+This is the Wiki super user account.  As it has //full// access to, and control of, the wiki, it should only really be used initially (to set up the wiki and create other user accounts), and in emergencies (say, if another administrator has forgotten their password).
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry root ----
+name             : the Wiki Superuser
+username         : root
+emailaddress_    : root@localhost
+phonenumber      : 
+location         : 
+namespace_nspage : wiki:user
+----
+~~MULTI_PLUGIN_CLOSE~~

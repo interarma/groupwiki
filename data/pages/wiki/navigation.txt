@@ -1,0 +1,17 @@
+  * [[:start|Home]]
+  * [[public:start|Public Home]]
+
+----
+
+  * [[meetings:start|Minutes of Meetings]]
+  * [[policies:start|Standing Decisions]]
+  * [[resources:media|Designs and Images]]
+  * [[documents:start|Documents and Reports]]
+  * [[projects:start|Projects and How-tos]]
+    * [[projects:signup_list|Sign-up List]]
+    * [[projects:incident_tracker|Incident Tracker]]
+  * [[resources:start|Group Resources]]
+  * [[contacts:internal|Internal Contacts]]
+  * [[contacts:external|External Contacts]]
+  * [[playground:playground|Playground]]
+  * [[help:start|Help]]

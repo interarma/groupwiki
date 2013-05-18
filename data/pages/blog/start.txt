@@ -1,0 +1,3 @@
+~~MULTI_PLUGIN_OPEN~~
+{{archive>blog?*}}
+~~MULTI_PLUGIN_CLOSE~~

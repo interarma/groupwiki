@@ -1,0 +1,58 @@
+====== Incident Tracker ======
+This incident tracking page is based upon the [[projects:example_incident_tracker|Example Incident Tracker]] template.  You can start using it as is, and you can create another one just by copying across the contents of the template. (Note that only the page and database //structures// will be copied across, not the data.)
+
+How you use these tracking pages is, of course, up to you, but we'd suggest you create one page per cause or focus rather than group together potentially independent incidents.
+
+Note that the views presented here only show a subset of the available data --- to view all of the data on a particular incident, click on the magnifying glass icon.
+
+~~MULTI_PLUGIN_OPEN~~
+<database incidents width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@incidents mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  date, date, Date, default="%{date.Y-m-d}" required visible
+  incident_type, "enum abuse / action / arrests / contact / discussion / force, use of / intimidation / legal / media / medical / neglect / political / protest / surveillance / violence / other", Type, visible required
+  summary, text, Summary, 80 required visible
+  description, text, Description, required
+  key_actors, text, Key Actors, 80 required visible
+  submitted_by, text, Submitted by, 60 visible required default="%{wiki.name}"
+  verified_by, text, Verified by, default="Example Witness 1 (0400 000 000)\nExample Witness 2 (0400 000 001)\n(or no one if still chasing up witnesses)"
+  related_links, text, Related links, default="http://example.org/story1.html\nhttp://anotherexample.com/story2.php"
+  attachment, file, Attachment, visible
+  response, "enum contact / in discussion / email / find witnesses / legal / media / none / pending / protest / seek advice / other", Response, required visible default="pending"
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Reports =====
+=== Pending Incidents ===
+The following report lists all incidents that have been marked as 'pending' or which are still awaiting verification.
+
+~~MULTI_PLUGIN_OPEN~~
+<database incidents_pending width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50 view="SELECT * FROM incidents WHERE response='pending' or response='find witnesses' or verified_by is null or verified_by = ''">
+  id, integer, ID, primary
+  date, date, Date, default="%{date.Y-m-d}" required visible
+  incident_type, "enum abuse / action / arrests / contact / discussion / force, use of / intimidation / legal / media / medical / neglect / political / protest / surveillance / violence / other", Type, visible required
+  summary, text, Summary, 80 required visible
+  description, text, Description, required
+  key_actors, text, Key Actors, 80 required visible
+  submitted_by, text, Submitted by, 60 visible required default="%{wiki.name}"
+  verified_by, text, Verified by, default="Example Witness 1 (0400 000 000)\nExample Witness 2 (0400 000 001)\n(or no one if still chasing up witnesses)"
+  related_links, text, Related links, default="http://example.org/story1.html\nhttp://anotherexample.com/story2.php"
+  attachment, file, Attachment, visible
+  response, "enum contact / in discussion / email / find witnesses / legal / media / none / pending / protest / seek advice / other", Response, required visible default="pending"
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry incident_tracker ----
+description      : An incident tracking project which can be used to document specific incidents and events
+author           : root
+created_dt       : 2012-04-30
+lastupdated_dt   : 2012-05-15
+type             : incident tracking
+status_          : current
+namespace_nspage : projects
+----
+~~MULTI_PLUGIN_CLOSE~~

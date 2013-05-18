@@ -1,0 +1,68 @@
+====== Signup List ======
+To add someone to the list, go to the bottom of the table and click on the '+' button. To update a record, just click on the pencil at the right-hand side of the row; to sort by a particular column, just click on the grey shape to the right of its heading; to search for records meeting specific criteria, just use the filter constructor below ('%' is the wildcard character).
+
+~~MULTI_PLUGIN_OPEN~~
+<database signups width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50 sort=!last_contacted>
+  id, integer, ID, primary
+  last_contacted, date, Last contacted, default="%{date.Y-m-d}" required visible
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, visible
+  announce, "enum Yes / No / Pending", Signup to -announce, visible default="Pending"
+  registered_how, "enum Protest / Speak out / Public forum / Website / Friend / Other", Heard about us via, required visible
+  comments, text, Comments, visible
+  active, boolean, Active, visible booltype=yesno default=yes
+  internal_contact, text, Internal Contact, 60 required default="unknown, added by %{wiki.user}"
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Reports =====
+=== People not heard from in over three months ===
+The following report lists all 'active' people on the list who have //not// been heard from in over three months.  (If you want to change the interval, you'll need to change the ''90'' in the ''database'' clause below to the desired number of days.)
+
+~~MULTI_PLUGIN_OPEN~~
+<database lost_touch_ro width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50 sort=last_contacted view="SELECT id,last_contacted,name,phone_number,email,registered_how,comments,internal_contact FROM signups WHERE active='y' AND JULIANDAY(last_contacted) < JULIANDAY(DATE('now')) - 90">
+  id, integer, ID, primary
+  last_contacted, date, Last contacted, default="%{date.Y-m-d}" required visible
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, visible
+  registered_how, "enum Protest / Speak out / Public forum / Website / Friend / Other", Heard about us via, required visible
+  comments, text, Comments, visible
+  internal_contact, text, Internal Contact, required visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+=== Potential duplicate registrations ===
+The following report lists potentially duplicated registrations (based upon matching phone numbers).
+
+~~MULTI_PLUGIN_OPEN~~
+<database potential_duplicates_ro width=100% mayfilter=@user mayexport=@user mayprint=@user maydelete=@contacts mayexport=@user simplenav=no rowsperpage=50 sort=!last_contacted view="SELECT id,last_contacted,name,signups.phone_number,email,announce,registered_how,comments,active FROM ( SELECT phone_number FROM signups GROUP BY phone_number HAVING NOT COUNT(phone_number)=1 ) as d INNER JOIN signups ON d.phone_number=signups.phone_number">
+  id, integer, ID, primary
+  last_contacted, date, Last contacted, default="%{date.Y-m-d}" required visible
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, visible
+  announce, "enum Yes / No / Pending", Signup to -announce, visible default="Pending"
+  registered_how, "enum Protest / Speak out / Public forum / Website / Friend / Other", Heard about us via, required visible
+  comments, text, Comments, visible
+  active, boolean, Active, visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry signup_list ----
+description      : An example of a sign-up sheet, complete with reports, built using the database2 plugin
+author           : root
+created_dt       : 2012-05-01
+lastupdated_dt   : 2012-05-03
+type             : documentation
+status_          : draft
+namespace_nspage : projects
+----
+~~MULTI_PLUGIN_CLOSE~~

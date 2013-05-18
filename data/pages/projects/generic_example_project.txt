@@ -1,0 +1,16 @@
+====== Generic Example Project ======
+===== Background and Context =====
+This page documents an example project, and has been included here to demonstrate how project pages might be structured.
+
+
+~~MULTI_PLUGIN_OPEN~~
+---- dataentry example_project ----
+description      : A generic example project included to demonstrate how the automatic project lists work
+author           : root
+created_dt       : 2012-04-30
+lastupdated_dt   : 2012-04-30
+type             : documentation
+status_          : concept
+namespace_nspage : projects
+----
+~~MULTI_PLUGIN_CLOSE~~

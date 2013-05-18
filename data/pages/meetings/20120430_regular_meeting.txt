@@ -1,0 +1,32 @@
+====== Meeting of 30 April 2012 ======
+Minutes of the regular meeting of Monday, 30 April 2012.
+
+
+===== Action Items =====
+  * **20120430**: Person Y to do something else
+  * 20120423: Person X to do something important
+
+
+===== Minutes =====
+  - **First Agenda Item**
+    - First point
+    - Second point
+    - **Action**: Person Y to do something else
+  - **Second Agenda Item**
+    - First point
+    - Second point
+    - **Motion**: that we support something
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry 20120430_regular_meeting ----
+author           : root
+date_dt          : 2012-04-30
+type             : regular
+foci             : To be finalised after the meeting
+namespace_nspage : meetings
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+~~NOTOC~~

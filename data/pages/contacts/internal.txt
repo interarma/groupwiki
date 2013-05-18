@@ -1,0 +1,14 @@
+====== Group Contact Details ======
+To add someone to the list, go to the bottom of the table and click on the '+' button. To update a record, just click on the pencil at the right-hand side of the row; to sort by a particular column, just click on the grey shape to the right of its heading; to search for records meeting specific criteria, just use the filter constructor below ('%' is the wildcard character).
+
+~~MULTI_PLUGIN_OPEN~~
+<database contact_details width=100% addonclick mayinsert=@user mayfilter=@user mayedit=@user maydelete=@contacts mayexport=@user mayprint=@user rowsperpage=50>
+  id, integer, ID, primary
+  name, text, Name, 60 required visible
+  phone_number, phone, Phone Number, 60 visible
+  email, email, Email, required visible
+  skypeid, text, Skype ID, 60 visible
+  location, text, Location, 60 visible
+  skills, text, Able to help with, 80 visible
+</database>
+~~MULTI_PLUGIN_CLOSE~~

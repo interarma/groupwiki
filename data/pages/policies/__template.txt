@@ -1,0 +1,22 @@
+====== @@Subject@@ ======
+Replace this with actual content.
+
+
+==== References ====
+The positions described in this document are based on discussions held in the following meeting(s):
+
+  * [[meetings:start|Replace this with a link to an appropriate minutes of meeting]]
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry @FILE@ ----
+author           : @USER@
+date_dt          : %Y-%m-%d
+scope            : ##Scope##
+namespace_nspage : policies
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+~~NOTOC~~

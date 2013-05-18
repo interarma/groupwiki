@@ -1,0 +1,2 @@
+====== The 'wiki:user' namespace ======
+As its name suggests, this namespace is where the user home pages are kept. (You can, of course, put them anywhere on this site but, in this case, there's really no point in doing so.)

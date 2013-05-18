@@ -1,0 +1,64 @@
+====== Finding your way around this Wiki ======
+
+===== Screen Layout =====
+If you're reading this page then you already know what this wiki //looks// like on screen, but to better describe each of the elements, we've included a highlighted version of the default GroupWiki's home page.  The key elements, then, are the:
+
+  - **body of the article (red)**: this is what you wrote when creating or editing the article;
+  - **article views and actions (light blue)**: these tabs allow you to switch between the article and its associated discussion page, to view or edit the currently displayed page, to view previous versions, or to request an email whenever a page is changed;
+  - **search box (orange)**: unsurprisingly, this is what you use to find articles within your wiki;
+  - **navigation box (purple)**: a user-configurable set of 'bookmarks' that allow you to quickly access the important parts of your wiki;
+  - **backtrace (dark green)**: a list of the past five pages you've looked at;
+  - **user-related actions (yellow)**: links that allow you to access your homepage, your discussions, to change your email address or password, or to log out; and
+  - **wiki's logos (light green)**: the icons that visually identify your wiki to its users --- in addition to its URL and content.
+
+| {{:help:homepage-annotated.png?nolink|}} |
+
+
+==== The Editors ====
+This wiki comes with two different editors --- the default Dokuwiki editor, and the CK editor.
+
+The default editor does include a toolbar that allows change text style, insert headings, links, lists, symbols and media (amongst other things), but it  displays your text in [[http://en.wikipedia.org/wiki/Wiki_markup|Wiki markup]] rather than as it will appear to the reader; to see what the article will look like without having to go through multiple 'Save' and 'Edit' cycles, you can use the 'Preview' button.
+
+The CK editor is a WYSIWYG (what you see is what you get) editor whose toolbar looks more like something you'd see in a word processor; it also shows you (roughly) what your text will look like once saved, reducing the need to use the 'Preview' button.
+
+(In case you were wondering why anyone would want to use the default editor over the WYSIWYG one, there are some rare situations where the latter can get a bit confused, or even break some of the more advanced syntax --- particularly those involving pages with embedded databases or user-entry forms.  Luckily, even if something goes wrong, you can always revert back to the previous version of the page.
+
+=== The Default DokuWiki Editor ===
+
+| {{:help:article-edit-dw.png?nolink|}} |
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+~~MULTI_PLUGIN_CLOSE~~
+
+=== The CK WYSIWYG Editor ===
+| {{:help:article-edit-fckg.png?nolink|}} |
+
+
+==== Subscribing to Changes ====
+Now, the editors above allow you to create and work on an article by yourself, but what if you're working on an article with someone else?  How will you know when to review or comment on their changes?  Well, yes, you they could just tell you, but wikis also allow you to 'subscribe' to changes, which means that the system will email you when an article of interest is changed.  (This might be less important for wikis maintained by smaller groups of people, but it becomes pretty important once the number of articles and contributors exceeds a certain number --- think wikipedia.)
+
+In any case, if you want to be notified, automatically, whenever a page is changed, you can subscribe to it via the 'Manage Subscriptions' tab.
+
+| {{:help:article-subscribe.png?nolink|}} |
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+**Previous Page: [[help:basic|Basic Wiki Concepts]]** --- **Next Page: [[help:articles|Working with Articles]]**
+
+\\
+
+---- dataentry navigation ----
+description      : An introduction to the wiki as it appears in your browser
+author           : root
+section          : 2
+created_dt       : 2012-05-23
+lastupdated_dt   : 2012-05-23
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

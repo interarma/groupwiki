@@ -1,0 +1,2 @@
+====== The 'policies' namespace ======
+As its name suggests, this namespace is where all of the standing decisions and policies should be kept.  (You can, of course, put them anywhere on this site, but if choose to do that, make sure you include the appropriate ''dataentry'' tags --- otherwise they won't show up on the 'Standing Decisions' index page.)

@@ -1,0 +1,76 @@
+====== Projects Home Page ======
+This page lists all of the projects and how-tos that have been documented under the ''projects'' namespace.  To view or edit a page just click on its title.  To create a new page, enter its title in the box below, choose its type and status from the appropriate drop-down box, and click on the 'Add Page' button.  If a project remains //after// it's been deleted, go [[:projects:start?do=admin&page=data_clean|here]] and click on 'Clean database!'.
+
+**Note:** where possible, try //not// to include any hyphens (''-'') in the title as they just tend to complicate things --- use underscores (''_'') instead and change them back in the title when you go to edit the page.
+
+
+~~MULTI_PLUGIN_OPEN~~  
+<form> action   template _ projects: _
+fieldset "Create a new project page"
+
+textbox  "Title" @
+select   "Type" "documentation|design|event|howto|incident reporting|protest|public forum|workshop|other"
+select   "Status" "concept|draft|current|template|archived" "=concept"
+textbox  "Description" "=A brief description"
+
+submit   "Add Page"
+</form>
+
+\\
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Current Projects =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : %title%, description, type, created_dt, lastupdated_dt, author
+headers : Project, Description, Type, Date Created, Last Updated, Author
+filter  : type!=howto
+filter  : status_!=archived
+filter  : status_!=template
+filter  : namespace_nspage~projects*
+max     : 20
+sort    : ^created_dt
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== How-tos =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : %title%, description, created_dt, lastupdated_dt, author
+headers : How-to, Description, Date Created, Last Updated, Author
+filter  : type=howto
+filter  : namespace_nspage~projects*
+max     : 20
+sort    : ^created_dt
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Templates =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : %title%, description, type, created_dt, lastupdated_dt, author
+headers : Project, Description, Type, Date Created, Last Updated, Author
+filter  : type!=howto
+filter  : status_=template
+filter  : namespace_nspage~projects*
+max     : 20
+sort    : ^created_dt
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Past Projects =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : %title%, description, type, created_dt, lastupdated_dt, author
+headers : Project, Description, Type, Date Created, Last Updated, Author
+filter  : type!=howto
+filter  : status_=archived
+filter  : namespace_nspage~projects*
+max     : 20
+sort    : ^lastupdated_dt
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,39 @@
+====== Documents and Reports Home Page ======
+This page lists all of the books, reports, papers, manuals and websites that are described within the ''documents'' namespace.  To view or edit a page just click on its title.  To create a new page, enter its title in the box below, choose its type and status from the appropriate drop-down box, and click on the 'Add Page' button.  If a project remains //after// it's been deleted, go [[:documents:start?do=admin&page=data_clean|here]] and click on 'Clean database!'.
+
+**Note:** where possible, try //not// to include any hyphens (''-'') in the title as they just tend to complicate things --- use underscores (''_'') instead and change them back in the title when you go to edit the page.
+
+
+~~MULTI_PLUGIN_OPEN~~  
+<form> action   template _ documents: _
+fieldset "Create a new documents page"
+
+textbox  "Author" @
+textbox  "Title" @
+select   "Type" "article|audio|book|manual|paper|report|speech|transcript|video|website|other"
+select   "Position" "argument against|argument for|information or statistics|summary|theory|other"
+textbox  "Description" "=A brief description of the key point(s)"
+date     "Date of Publication"
+textbox  "Publisher"
+textbox  "Locator or URL"
+
+submit   "Add Page"
+</form>
+
+\\
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Documents and Reports =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : author, %title%, description, position, publication_dt
+headers : Author, Title, Description, Position, Published
+filter  : namespace_nspage~documents*
+max     : 40
+sort    : ^publication_dt
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+~~NOTOC~~

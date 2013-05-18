@@ -1,0 +1,2 @@
+====== Welcome to your new Wiki's Talk Page ======
+This is just an example of the parallel 'Discussion' pages that can be created for any article.  You certainly don't //have// to use them, but they provide a good way of tracking discussions or suggestions about how an article could be improved.

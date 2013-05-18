@@ -1,0 +1,30 @@
+====== Meeting of %d %B %Y ======
+Minutes of the @@Type of meeting@@ meeting of %A, %d %B %Y.
+
+
+===== Action Items =====
+  * **%Y%m%d**: Person X to do something important
+
+
+===== Minutes =====
+  - **First Agenda Item**
+    - Point 1.1
+    - Point 1.2
+    - **Action**: Person Y to do something else
+  - **Second Agenda Item**
+    - Point 2.1
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry @FILE@ ----
+author           : @USER@
+date_dt          : %Y-%m-%d
+type             : ##Type of meeting##
+foci             : ##Key agenda items##
+namespace_nspage : meetings
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+~~NOTOC~~

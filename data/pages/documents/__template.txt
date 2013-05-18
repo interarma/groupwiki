@@ -1,0 +1,26 @@
+====== @@Title@@ (@@Author@@) ======
+Congratulations, you've created a new page!  Note that if the document title
+contains a hyphen, there will also be a ''-'' in the label between the 
+''----dataentry----'' and '----' entries below --- you should change it to an 
+underscore (''_''), otherwise this document won't be indexed correctly.
+
+Oh, and you'll probably want to delete this and the preceding paragraphs before 
+you get started --- be sure to the leave the ''MULTI_PLUGIN'' and ''dataentry''
+lists intact, though.
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry @FILE@ ----
+author           : ##Author##
+title            : ##Title##
+type             : ##Type##
+position         : ##Position##
+description      : ##Description##
+publication_dt   : ##Date of Publication##
+publisher        : ##Publisher##
+location         : ##Locator or URL##
+namespace_nspage : documents
+----
+~~MULTI_PLUGIN_CLOSE~~

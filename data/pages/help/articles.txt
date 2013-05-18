@@ -1,0 +1,60 @@
+====== Working with Articles ======
+===== Creating Articles =====
+In this wiki, there are two ways to create an article --- via a form, or directly.  Forms allow you to create new pages that are pre-populated with information such as titles, descriptions, dates and categories; several of the main sections listed in the navigation sidebar include these kinds of page-creation forms.  An example of such a form is the one on the [[projects:start|Projects]] homepage:
+
+| {{:help:create-article-form.png?nolink|}} |
+
+The other way to create an article is to go to a non-existent page, and select the 'Create' option.  Note that if you create a new article directly but do //not// press 'Save', then it won't actually be created.
+
+| {{:help:create-article-directly.png?nolink|}} |
+
+
+===== Editing Articles =====
+==== Wiki Markup ====
+==== Using the FCK Editor ====
+==== Working with Revision Control ====
+==== On Discussions ====
+
+===== Deleting Articles =====
+To delete an article, all you need to do is enter an editor, delete all of its contents, and press 'Save' --- articles with no content are automatically removed from the wiki and its associated indexes.
+
+To //undelete// an article, simply re-create it --- i.e. press 'Create', enter something in your editor, and press 'Save' --- and then press 'Old revisions'.  From there, you can then restore a previous version as you would for any other article.
+===== Finding Articles =====
+==== Searching the Wiki ====
+Perhaps the easiest way to find content on a wiki is to use the search functionality.  In //this// system, there are four key components to the search interface:
+
+| {{:help:navigation-search-annotated.png?nolink|}} |
+
+  - **the search box**, which is where you enter your query;
+  - **search hints**, which appear as you're typing your query and show you which //pagenames// at least partially match your request;
+  - **matching pagenames**, which shows the full list of pages whose name match your query; and
+  - **full-text search results**, which shows the full list of pages that contain the //words// you entered in the search box.
+
+
+==== Using the Site Index ====
+An alternative to //searching// for specific content is to browse through the structure of the wiki --- which is where the 'Site index' comes in.  The index can be accessed from the 'Toolbox' which appears below the navigation box, shown in purple in the first image.  By clicking on the triangles in the tree-view, you can browse the namespaces and page structures as you would the directories on your computer.  Sort of.
+
+| {{:help:navigation-site-index.png?nolink|}} |
+
+
+==== The Navigation Sidebar ====
+Finally, we have the navigation sidebar.  Unlike the other two options, which allow you to get to any page on the wiki (that you have permission to read), the sidebar is basically a user-configurable set of 'bookmarks' that allow you to quickly access the important parts of your wiki.  (To change it, you need to edit either [[wiki:navigation|wiki:navigation]] or [[wiki:navigation_sidebar|wiki:navigation_sidebar]], depending on which theme you're using, but that's more of an administration task.)
+
+| {{:help:navigation-sidebar-annotated.png?nolink|}} |
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry example ----
+description      : Help on how to work with, and find, articles within this wiki
+author           : root
+section          : 3
+created_dt       : 2012-04-29
+lastupdated_dt   : 2012-04-29
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,33 @@
+====== Standing Decisions and Policies ======
+This page lists all of the key decisions and standing policies described within the ''policies'' namespace.  To view or edit a page just click on its title.  To create a new page, enter its subject in the box below, choose its type and status from the appropriate drop-down box, and click on the 'Add Page' button.  If a project remains //after// it's been deleted, go [[:documents:start?do=admin&page=data_clean|here]] and click on 'Clean database!'.
+
+**Note:** where possible, try //not// to include any hyphens (''-'') in the title as they just tend to complicate things --- use underscores (''_'') instead and change them back in the title when you go to edit the page.
+
+
+~~MULTI_PLUGIN_OPEN~~  
+<form> action   template _ policies: _
+fieldset "Create a new policy page"
+
+textbox  "Subject" @
+select   "Scope" "the whole group|working group|interactions with external group|other" "=the whole group"
+
+submit   "Add Page"
+</form>
+
+\\
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Documents and Reports =====
+~~MULTI_PLUGIN_OPEN~~  
+---- datatable ----
+cols    : date_dt, %title%, scope
+headers : Last updated, Subject, Scope
+filter  : namespace_nspage=policies
+max     : 40
+sort    : ^date_dt
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+~~NOTOC~~

@@ -1,0 +1,5 @@
+====== Group Resources (Restricted) ======
+This section contains a list of restricted shared accounts and their logon credentials.  For a list of the more widely shared accounts, click [[:resources:start|here]].
+
+^ site           ^ Username                   ^ Password       ^ Comments                   ^
+| example.com    | exampleuser@example.com    | dummypasswd    | This is just an example    |

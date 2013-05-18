@@ -1,0 +1,19 @@
+====== @!!PAGE@ ======
+
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry @FILE@ ----
+description      : A brief description of this help page
+author           : @USER@
+section          : 99
+created_dt       : %Y-%m-%d
+lastupdated_dt   : %Y-%m-%d
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

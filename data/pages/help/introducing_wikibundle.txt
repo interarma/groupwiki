@@ -1,0 +1,18 @@
+====== Introducing GroupWiki ======
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry introducing_groupwiki ----
+description      : An introduction to the structure and functionality of this wiki package
+author           : root
+section          : 4
+created_dt       : 2012-04-30
+lastupdated_dt   : 2012-04-30
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,32 @@
+====== First Use ======
+At this point, you have a fully-functional wiki site with some of the more useful plugins pre-installed, a '[[:projects:start|projects]] ' section (which is allowed to include embedded databases), a '[[:blog:start|blog]] ' section, and a '[[:public:start|public]] ' section (which, unsurprisingly, is publicly readable).
+
+What //you// need to do to customise this site for your own use is:
+
+    - Change the Wiki Superuser's password and create some new user accounts by going to the [[:start?do=admin&page=usermanager|Admin-->User Manager]] page.
+    - Decide whether you want this site to be restricted to registered users only or open to the general public.  By default, only the 'public' namespace is publicly accessible, and the 'projects' section is only accessible to registered users, but you can change those settings by going to the [[:start?do=admin&page=acl|Admin-->Access Control List Management]] page.
+    - Change the name and licensing of the wiki under [[:start?do=admin&page=config#_basic|Admin-->Configuration Manager]].
+    - Settle upon a structure for the new site — what logical collections of concepts will it contain, and who will be given read, write, create and delete permissions?
+    - Set your [[:wiki:navigation|wiki:navigation]] and [[:wiki:site_notice|wiki:site_notice]] texts accordingly.
+    - Change this home page, and change the logo in the top-left corner — just save the 128×128 pixel logo of your choice as ''lib/tpl/vector/user/logo.png''  on your web server, or change templates altogether.
+
+And be sure to check out the [[:playground:start|playground]] for examples of how to use the various pre-installed plugins.
+
+Finally, please bear in mind that this Wiki Bundle (and its internal documentation) is very much a work-in-progress — for updated builds and documentation, please see [[http://interarma.org/doku.php?id=projects:wiki_bundle|http://interarma.org/doku.php?id=projects:wiki_bundle]].
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry first_use ----
+description      : A brief description of this help page
+author           : root
+section          : 1
+created_dt       : 2012-04-30
+lastupdated_dt   : 2012-04-30
+type             : documentation
+tags             : admin
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

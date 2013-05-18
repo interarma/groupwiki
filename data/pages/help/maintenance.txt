@@ -1,0 +1,22 @@
+====== Maintaining the Wiki ======
+
+  * [[help:meetings_template|Meetings template]]
+  * [[help:projects_template|Projects template]]
+  * [[help:user_template|User template]]
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry example ----
+description      : How to maintain the Wiki
+author           : root
+section          : 2
+created_dt       : 2012-04-29
+lastupdated_dt   : 2012-04-29
+type             : documentation
+tags             : admin
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

@@ -1,0 +1,18 @@
+1368506895	192.168.100.131	E	start	root		
+1368510704	192.168.100.131	E	wiki:navigation_sidebar	root		
+1368510710	192.168.100.131	E	wiki:navigation	root		
+1368506469	127.0.0.1	E	meetings:20120430_regular_meeting		external edit	
+1368515181	192.168.100.131	E	meetings:20120430_regular_meeting	root		
+1368519159	192.168.100.131	E	documents:start	root		
+1368545515	192.168.100.131	E	playground:playground	root		
+1368582671	192.168.100.131	E	meetings:20120430_regular_meeting	root		
+1368584190	192.168.100.131	C	policies:start	root	created	
+1368584382	192.168.100.131	C	policies:example_standing_decision_other	root	Created from the form at policies:start	
+1368584420	192.168.100.131	D	policies:example_standing_decision_other	root	removed	
+1368584446	192.168.100.131	E	wiki:navigation	root		
+1368584454	192.168.100.131	E	wiki:navigation_sidebar	root		
+1368584485	192.168.100.131	C	policies:example_standing_decision	root	Created from the form at policies:start	
+1368584551	192.168.100.131	C	namespace:policies	root	created	
+1368584591	192.168.100.131	D	policies:example_standing_decision	root	removed	
+1368584778	192.168.100.131	C	policies:example_standing_decision	root	Created from the form at policies:start	
+1368584822	192.168.100.131	E	policies:example_standing_decision	root		

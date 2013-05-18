@@ -1,0 +1,28 @@
+===== Welcome to your new Wiki =====
+
+
+Or perhaps that should say 'Welcome to //your// new Wiki'. Now that it's installed, you are, of course, free to do whatever you want to with it, but here are some suggested first steps:
+
+
+    - go to the [[:start?do=admin&page=usermanager|Admin-->User Manager]] page, click on the ''root'' user and **change its password to something secure**
+    - go through the [[:help:start|Help]] section to learn more about this wiki, its structure, and how to use it;
+    - play with it — the best way to learn about something new is to use it;
+    - think through how your group could use and/or add to the default wiki structure;
+    - possibly delete and then re-install this wiki to give yourself a clean slate;
+    - follow the steps outlined in the [[:help:start#administrator_documentation|Administration]] section;
+    - change this home page to something less generic (but you already did that during the previous step, didn't you?); and last, but not least
+    - introduce and //train//  the end-users so that they can actually use the site and contribute to its content
+
+
+===== Site News =====
+
+
+Here are the five most recent site news stories. To create a new post, use the box at the bottom of the page; to see the complete news archive, click [[:blog:start|here]].
+
+
+~~MULTI_PLUGIN_OPEN~~ 
+{{blog>blog?5}}
+~~MULTI_PLUGIN_CLOSE~~ 
+
+
+~~NOTOC~~

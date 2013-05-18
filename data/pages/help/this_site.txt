@@ -1,0 +1,19 @@
+====== Help using this Site ======
+Having inherited all of the generic GroupWiki documentation, //you// should probably write something specifically about your site and, in particular, any changes you've made to its structure.
+
+
+~~MULTI_PLUGIN_OPEN~~
+\\
+
+---- dataentry this_site ----
+description      : A brief description of your site and any changes you've made to the structure of the GroupWiki
+author           : root
+section          : 7
+created_dt       : 2012-05-05
+lastupdated_dt   : 2012-05-05
+type             : documentation
+tags             : user
+status_          : draft
+namespace_nspage : help
+----
+~~MULTI_PLUGIN_CLOSE~~

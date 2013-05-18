@@ -1,0 +1,7 @@
+base   groupwikiversion
+author interarma.org
+email  dev-groupwiki@interarma.org
+date   2013-05-15
+name   GroupWiki version plugin
+desc   Placeholder plugin to record this GroupWiki distribution's version number
+url    http://interarma.org/doku.php?id=projects:wiki_bundle

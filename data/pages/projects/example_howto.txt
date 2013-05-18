@@ -1,0 +1,21 @@
+====== Example How-to ======
+===== Background and Context =====
+This page is an example how-to which has been included here to demonstrate how these they might be structured.
+
+===== Requirements =====
+
+
+===== Procedures =====
+
+
+~~MULTI_PLUGIN_OPEN~~
+---- dataentry example_howto ----
+description      : An example how-to included here to demonstrate how the automatic how-to lists work
+author           : root
+created_dt       : 2012-04-30
+lastupdated_dt   : 2012-04-30
+type             : howto
+status_          : draft
+namespace_nspage : projects
+----
+~~MULTI_PLUGIN_CLOSE~~

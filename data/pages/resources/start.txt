@@ -1,0 +1,17 @@
+====== Group Resources ======
+
+===== Online Accounts =====
+This section contains a list of shared accounts and their logon credentials.  For a list of the more sensitive accounts (e.g. DNS registry details), click [[:resources:restricted|here]].
+
+^ site           ^ Username                   ^ Password       ^ Comments                   ^
+| example.com    | exampleuser@example.com    | dummypasswd    | This is just an example    |
+
+
+===== Physical Resources =====
+^ Description                           ^ Custodian         ^ Comments                          ^
+| Banners                               | Person 1          | This is another example           |
+
+
+===== Services =====
+^ Description                           ^ Contact           ^ Comments                          ^
+| Photocopying                          | Person 2          | Yet another example entry         |

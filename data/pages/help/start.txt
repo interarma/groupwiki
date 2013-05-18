@@ -1,0 +1,28 @@
+====== Help ======
+
+===== User Documentation =====
+These pages describe the basic //structure// of this wiki as well as how to use it to create and edit new pages, document projects and record the outcomes of meetings, and create databases, amongst other things.
+
+~~MULTI_PLUGIN_OPEN~~
+---- datatable ----
+cols    : section, %title%, description
+headers : Section, Title, Description
+filter  : namespace_nspage=help
+filter  : tags=user
+sort    : section
+----
+~~MULTI_PLUGIN_CLOSE~~
+
+
+===== Administrator Documentation =====
+If you're responsible for setting up or maintaining this site, you should also check out the following pages:
+
+~~MULTI_PLUGIN_OPEN~~
+---- datatable ----
+cols    : section, %title%, description
+headers : Section, Title, Description
+filter  : namespace_nspage=help
+filter  : tags=admin
+sort    : section
+----
+~~MULTI_PLUGIN_CLOSE~~
